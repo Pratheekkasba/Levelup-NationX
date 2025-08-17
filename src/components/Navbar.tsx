@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,20 +34,11 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
+          {/* Brand Name */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="flex items-center space-x-3"
+            className="flex items-center"
           >
-            <div className="w-12 h-12 bg-gradient-to-r from-picton-blue to-picton-blue-600 rounded-xl flex items-center justify-center overflow-hidden">
-              <Image
-                src="/levelup-nationx-logo.jpg"
-                alt="LevelUp NationX Logo"
-                width={48}
-                height={48}
-                className="object-cover"
-              />
-            </div>
             <span className="text-white font-bold text-2xl">LevelUp NationX</span>
           </motion.div>
 

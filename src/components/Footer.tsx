@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Github, Twitter, Linkedin, Instagram, ArrowUp } from 'lucide-react';
-import Image from 'next/image';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -37,16 +36,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-picton-blue to-picton-blue-600 rounded-xl flex items-center justify-center overflow-hidden">
-                <Image
-                  src="/levelup-nationx-logo.jpg"
-                  alt="LevelUp NationX Logo"
-                  width={48}
-                  height={48}
-                  className="object-cover"
-                />
-              </div>
+            <div className="mb-6">
               <span className="text-white font-bold text-2xl">LevelUp NationX</span>
             </div>
             <p className="text-white/60 mb-6 leading-relaxed">
